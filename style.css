@@ -1,0 +1,180 @@
+
+/*--------------------------------------------------*/
+
+
+body {
+  min-width: 250px;
+
+}
+
+/* Include the padding and border in an element's total width and height */
+* {
+  box-sizing: border-box;
+  font-family: Inter;
+}
+
+/* Remove margins and padding from the list */
+ul{
+  margin: 0;
+  padding: 5px 0px;
+  list-style:none;
+}
+
+
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  font-size:21px;
+  transition: 0.2s;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+}
+
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #000000;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 15px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+.edit{
+background:none;
+border:none;
+}
+
+#edit{
+    border: none;
+    background: none;
+    float:left;
+    margin:5px;
+    color: #777777;
+    }
+
+ul li input[type=text] {
+  display:none;
+}
+
+ul li.editMode input[type=text] {
+  display:block;
+}
+
+#myDIV, #myUL, footer{
+    margin: auto;
+    width:60%;
+}
+
+
+hr{
+height: 1px;
+background: rgba(0, 0, 0, 0.1);
+}
+
+footer{
+    text-align:center;
+}
+
+footer h1{
+    font-style: normal;
+    font-weight: 900;
+    line-height: 39px;
+    letter-spacing: 0em;
+}
+
+footer p{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+}
+
+
+#naslov input{
+    width:40%;
+    float:left;
+}
+
+#add {
+    border: 1px solid #000000 10%;
+    border-radius: 4px;
+    float:right;
+    background-image: linear-gradient(#FFD976, #F8BE26);
+    padding:5px;
+    font-size:16px;
+    font-weight:700;
+}
+
+/* Clear floats after the header */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#myInput{
+    font-family: Inter;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    width:100%;
+}
+
+input {
+    background: #eee;
+    margin: 0;
+    border: none;
+    width: 75%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 0px 4px 4px 0px;
+}
+
+
+#dodaj{
+    border:none;
+     border-radius: 4px 0px 0px 4px;
+}
+
+button:hover{
+  cursor:pointer;
+}
+
+.InputAddOn {
+  display: flex;
+  margin-bottom: 1.5em;
+
+}
+
+.InputAddOn-field {
+  flex: 1;
+}
+textarea:focus, input:focus, button:focus{
+    outline: none;
+}
+
+
+/* Edit Task */
+ul li input[type=text] {
+  display:none;
+}
+
+ul li.editMode input[type=text] {
+  display:block;
+}
+
+ul li.editMode label {
+  display:none;
+}
+
