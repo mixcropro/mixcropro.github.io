@@ -62,9 +62,6 @@ border:none;
     }
 
 
-
-
-
 hr{
 height: 1px;
 background: rgba(0, 0, 0, 0.1);
@@ -90,13 +87,10 @@ background: rgba(0, 0, 0, 0.1);
 }
 
 
-
-
-#add {
+.add {
     border: 1px solid #000000 10%;
     border-radius: 4px;
     float:right;
-
     margin-left:5px;
     background-image: linear-gradient(#FFD976, #F8BE26);
     padding:5px;
