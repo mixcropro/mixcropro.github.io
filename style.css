@@ -13,6 +13,8 @@ body {
   font-family: Inter;
   word-wrap: break-word;
 }
+#incomplete-tasks{
+word-break: break-all;}
 
 /* Remove margins and padding from the list */
 ul{
