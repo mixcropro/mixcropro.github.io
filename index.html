@@ -2,51 +2,70 @@
 <html>
 <head>
     <title>Todo App</title>
-   <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-<!-- Popper JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-    
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" href="style.css" type="text/css" media="screen" charset="utf-8">
 </head>
 <body>
 
-<div id="myDIV" class="header">
-    <ul id="incomplete-tasks">
-       <li><label></label><input type="text">
-            <button class="edit"><img src="images/Vector.png">Edit</button>
-            <button id="add">New List</button>
-        </li>
-    </ul>
 
-    <br><br><br>
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <ul id="incomplete-tasks">
+            <li><label>Untitled list</label><input type="text">
+                <button class="edit"><img src="images/vector.png">Edit</button>
+                <button id="add">New List</button>
+            </li>
+        </ul>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
 
-    <div class="InputAddOn">
+
+
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="InputAddOn col-sm-6">
         <button onclick="newElement()" id="dodaj"><img src="images/add.png"></button>
         <input id="myInput" placeholder="Add a to-doo...">
     </div>
-
-
+    <div class="col-sm-3"></div>
 </div>
 
-<ul id="myUL">
-    <li>ss</li>
-</ul>
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <ul id="myUL">
+            <li>ss</li>
+        </ul>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
 
 
-<footer>
-    <hr>
-    <h1>Too Doo</h1>
-    <p>Your to-dos have never been simpler.</p>
-</footer>
+<div class="row footer">
+    <div class="col-sm-3"></div>
+
+    <div class="col-sm-6">
+        <hr>
+        <h1>Too Doo</h1>
+        <p>Your to-dos have never been simpler.</p>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
+
 
 <script>
 // Add a "checked" symbol when clicking on a list item
@@ -196,6 +215,9 @@ function newElement() {
     }
   }
 }
+
+
+
 
 
 
