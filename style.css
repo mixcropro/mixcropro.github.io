@@ -9,7 +9,7 @@ body {
 
 /* Include the padding and border in an element's total width and height */
 * {
-  box-sizing: border-box;
+
   font-family: Inter;
   word-wrap: break-word;
 }
@@ -57,22 +57,12 @@ border:none;
     border: none;
     background: none;
     float:left;
-    margin:5px;
+
     color: #777777;
     }
 
-ul li input[type=text] {
-  display:none;
-}
 
-ul li.editMode input[type=text] {
-  display:block;
-}
 
-#myDIV, #myUL, footer{
-    margin: auto;
-    width:60%;
-}
 
 
 hr{
@@ -80,18 +70,18 @@ height: 1px;
 background: rgba(0, 0, 0, 0.1);
 }
 
-footer{
+.footer{
     text-align:center;
 }
 
-footer h1{
+.footer h1{
     font-style: normal;
     font-weight: 900;
     line-height: 39px;
     letter-spacing: 0em;
 }
 
-footer p{
+.footer p{
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -100,15 +90,14 @@ footer p{
 }
 
 
-#naslov input{
-    width:40%;
-    float:left;
-}
+
 
 #add {
     border: 1px solid #000000 10%;
     border-radius: 4px;
     float:right;
+
+    margin-left:5px;
     background-image: linear-gradient(#FFD976, #F8BE26);
     padding:5px;
     font-size:16px;
@@ -116,11 +105,9 @@ footer p{
 }
 
 /* Clear floats after the header */
-.header:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+
+
+
 #myInput{
     font-family: Inter;
     font-size: 21px;
@@ -136,7 +123,6 @@ input {
     background: #eee;
     margin: 0;
     border: none;
-    width: 75%;
     padding: 10px;
     font-size: 16px;
     border-radius: 0px 4px 4px 0px;
@@ -167,10 +153,10 @@ textarea:focus, input:focus, button:focus{
 
 
 /* Edit Task */
+
 ul li input[type=text] {
   display:none;
 }
-
 ul li.editMode input[type=text] {
   display:block;
 }
@@ -178,4 +164,5 @@ ul li.editMode input[type=text] {
 ul li.editMode label {
   display:none;
 }
+
 
